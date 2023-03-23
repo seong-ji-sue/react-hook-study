@@ -1,8 +1,12 @@
 import './App.css';
+import MainContext from "./useContextCode/MainContext";
 
 function App() {
   return (
-    <div>asd</div>
+    <div>
+      <h2>useContext 실습</h2>
+      <MainContext />
+    </div>
   );
 }
 
