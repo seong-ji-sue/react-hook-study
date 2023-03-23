@@ -1,6 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
+import {ThemeContext} from "../context/ThemeContext";
 
-function Footer({isDark, setIsDark}) {
+function Footer() {
+  const {isDark, setIsDark} = useContext(ThemeContext);
+
   const toggleTheme = () => {
     setIsDark(!isDark);
   }

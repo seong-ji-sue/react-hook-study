@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
+import {ThemeContext} from "../context/ThemeContext";
 
-function Header({isDark}) {
+function Header() {
+  const {isDark} = useContext(ThemeContext);
   return (
     <header
       className={"header"}
