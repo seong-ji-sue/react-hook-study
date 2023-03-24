@@ -1,8 +1,14 @@
 import './App.css';
+import NumberCallback from "./useCallbackCode/NumberCallback";
+import SizeCallback from "./useCallbackCode/SizeCallback";
 
 function App() {
   return (
-    <div>asd</div>
+    <div>
+      <h3>useCallback 실습</h3>
+      <NumberCallback />
+      <SizeCallback />
+    </div>
   );
 }
 
